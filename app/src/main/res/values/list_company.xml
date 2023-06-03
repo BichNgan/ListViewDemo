@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_company">
+        <item>Meta</item>
+        <item>Google</item>
+        <item>FPT</item>
+        <item>VNG</item>
+        <item>Honda</item>
+        <item>Yamaha</item>
+    </string-array>
+</resources>
