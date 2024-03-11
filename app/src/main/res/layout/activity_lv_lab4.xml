@@ -33,6 +33,15 @@
 
     <ListView
         android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/lvTenSV">
+
+    </ListView>
+
+    <ListView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/lvTenSV"/>
+        android:background="#BCF1F0"
+        android:id="@+id/lvFlags"/>
+
 </LinearLayout>

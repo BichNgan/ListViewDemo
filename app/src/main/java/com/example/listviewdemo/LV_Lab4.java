@@ -22,8 +22,11 @@ public class LV_Lab4 extends AppCompatActivity {
     TextView tvItem;
     Button btnThem;
     ListView lvTenSV;
+    ListView lvQG;
     ArrayList<String>lsName = new ArrayList<>();
+    ArrayList<Flag>lsQG = new ArrayList<>();
     ArrayAdapter<String> adapter;
+    CustomAdapterFlag adapterFlag;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,9 +40,22 @@ public class LV_Lab4 extends AppCompatActivity {
 
         adapter = new ArrayAdapter<>(getApplicationContext(), androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,lsName);
         lvTenSV.setAdapter(adapter);
-        //----------------------
-        addEvent();
 
+        //===========================
+        //Xử lý cho custom ListView Flag
+        lsQG.add(new Flag(R.drawable.france,"Pháp"));
+        lsQG.add(new Flag(R.drawable.lao,"Lào"));
+        lsQG.add(new Flag(R.drawable.italy,"Ý"));
+
+        adapterFlag=new CustomAdapterFlag(LV_Lab4.this, R.layout.layout_item_cuslv_flags,lsQG);
+        lvQG.setAdapter(adapterFlag);
+
+
+
+
+
+        //--------------------
+        addEvent();
     }
 
     void addControl()
@@ -48,6 +64,8 @@ public class LV_Lab4 extends AppCompatActivity {
         tvItem=(TextView) findViewById(R.id.tvItem);
         btnThem = (Button) findViewById(R.id.btnThem);
         lvTenSV = (ListView) findViewById(R.id.lvTenSV);
+        lvQG=(ListView) findViewById(R.id.lvFlags);
+
     }
     void addEvent()
     {
