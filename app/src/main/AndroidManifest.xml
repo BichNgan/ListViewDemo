@@ -12,6 +12,12 @@
         android:theme="@style/Theme.ListViewDemo"
         tools:targetApi="31">
         <activity
+            android:name=".LV_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerViewMovie"
+            android:exported="false" />
+        <activity
             android:name=".SpinnerCompany"
             android:exported="false" />
         <activity
@@ -30,10 +36,10 @@
             android:name=".CustomLV_Fruit"
             android:exported="false" />
         <activity
-            android:name=".LV_Activity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LV_Lab4"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
