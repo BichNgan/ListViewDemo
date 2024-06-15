@@ -26,11 +26,15 @@ public class RecyclerViewMovie extends AppCompatActivity {
         recyMovie=(RecyclerView) findViewById(R.id.recyMovie);
         //-----------------------------------------------------
         arrayListMovie=Movie.iniArrayListMovie(lsMovieName,lsGenner,lsYear);
+        //------------------------
         adapterMovie=new AdapterMovie(arrayListMovie);
+
         recyMovie.addItemDecoration(new DividerItemDecoration(this,
                 DividerItemDecoration.VERTICAL));
+
         RecyclerView.LayoutManager mLayoutManager=
                 new LinearLayoutManager(RecyclerViewMovie.this);
+
         recyMovie.setLayoutManager(mLayoutManager);
         recyMovie.setItemAnimator(new DefaultItemAnimator());
         recyMovie.setAdapter(adapterMovie);

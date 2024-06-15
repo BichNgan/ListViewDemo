@@ -20,7 +20,7 @@ public class SpinnerCompany extends AppCompatActivity {
     Spinner spinnerTC;
     ArrayList<Fruit>arrayListFruit=new ArrayList<>();
     CustomAdapterFruitSpinner adapSpinnerTC;
-
+    //----------------------------
     int[] lsIdImg = new int[]{R.drawable.apple,R.drawable.banana, R.drawable.litchi,
             R.drawable.mango,R.drawable.pineapple};
     String[]lsName= new String[]{"Táo","Chuối","Dâu","Xoài","Thơm"};
@@ -52,6 +52,8 @@ public class SpinnerCompany extends AppCompatActivity {
         //--------------------------------------------------------------------
         //=======================CUSTOM SPINNER FRUIT ================================
         arrayListFruit=Fruit.iniArrayListFruit(lsIdImg,lsName,lsPrice);
+
+
         adapSpinnerTC=new CustomAdapterFruitSpinner(SpinnerCompany.this,R.layout.layout_item_fruit,arrayListFruit);
         spinnerTC.setAdapter(adapSpinnerTC);
 

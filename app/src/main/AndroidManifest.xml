@@ -15,16 +15,16 @@
             android:name=".LV_Activity"
             android:exported="false" />
         <activity
-            android:name=".RecyclerViewMovie"
+            android:name=".RecyclerViewDemo"
             android:exported="false" />
         <activity
-            android:name=".SpinnerCompany"
+            android:name=".CustomLV_Fruit"
             android:exported="false" />
         <activity
             android:name=".Recy_Fruit"
             android:exported="false" />
         <activity
-            android:name=".RecyclerViewDemo"
+            android:name=".LV_Lab4"
             android:exported="false" />
         <activity
             android:name=".CustSpinnerFruit"
@@ -33,13 +33,13 @@
             android:name=".SpinnerDemo"
             android:exported="false" />
         <activity
-            android:name=".CustomLV_Fruit"
+            android:name=".RecyclerViewMovie"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".LV_Lab4"
+            android:name=".SpinnerCompany"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
